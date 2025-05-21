@@ -1,0 +1,99 @@
+@media all{
+
+    :root {
+    --primary-bg-color: #fff;
+    --primary-txt-color: #000;
+    --secondary-bg-color: #000;  
+    --secondary-txt-color: #fff;
+    --primary-fonts: 'Open Sans', sans-serif;
+    --secondary-fonts: 'Righteous', sans-serif;
+  }
+
+  header, main, article, section, aside, nav {display: block;}
+  body {margin: 0; padding: 0; font: 13px/1.3 var(--primary-fonts); background-color: var(--secondary-bg-color);}
+  h1 {font-family: 'Righteous', sans-serif; font-size: 35px; font-weight: 400; padding: 15px 32px 0; color: #fff;}
+  a:focus {outline: 2px dotted #000; outline-offset: 5px;}
+}
+
+  @media screen{
+
+  .container {width: 1020px; margin: 0 auto; box-sizing: border-box;}
+  .grid {display: grid;} 
+  .wrapper {padding: 80px 110px;}
+
+  #masthead {background: url(../i/city-skate-hero.webp) top center no-repeat; background-size: cover; height: 567px; max-width: 1020px; margin: 0 auto;} 
+  #jumpLink {position: absolute; top: -9999px; color: #fff;}
+  #jumpLink:focus {top: 10px; left: 90px; outline: 2px dotted #fff; outline-offset: 5px;}
+  .logoGrid {grid-template-columns: repeat(2, 1fr);}
+  #logo {text-decoration: none;}
+  .logoGrid #logo:hover, .logoGrid #logo:focus {color:#b4b4b4e3;}
+  #globalNav ul {list-style: none; font-family: 'Righteous', sans-serif;}
+  #globalNav li {display: inline-block; padding-right: 10px; float: left;}
+  #globalNav li:last-child {padding-right: 0;}
+  #globalNav a {color: #fff; text-decoration: none; font-size: 35px;}
+  #globalNav li:hover, #globalNav a:focus {color: #b4b4b4e3;}
+  .line {border-bottom: 8px solid #F5833D; margin: 0 auto; max-width: 1020px;}
+
+  #skateTop {max-width: 1020px; margin: 0 auto; position: relative; height: 1380px;}
+  .quote {background-color: #fff; padding: 130px; max-width: 1020px; margin: 0 auto; text-align: center;}
+  #topH2 {text-align: center; padding: 35px 0; font-size: 33px;}
+  .quote a {color: #000; text-decoration: none; font-size: 22px;}
+  .quote a:hover, .quote a:focus {color: #b4b4b4e3; outline: 2px dotted #000; outline-offset: 5px;}
+  h3 {color: white; text-align: center; padding-top: 150px; font-size: 16px;}
+  .rareCollection {height: 340px; max-width: 340px; position: absolute; top: 300; left: 0; background-color: var(--secondary-bg-color);}
+  .rareCollection h3 { padding-top: 100px;}
+  .rareCollection p {color: var(--secondary-txt-color); text-align: center; padding: 0 50px; font-size: 16px; line-height: 2;}
+
+  .collection p {color: var(--secondary-txt-color); text-align: center; padding: 0 50px; font-size: 16px; line-height: 2;}
+  .collection {height: 340px; max-width: 340px; position: absolute; top: 0; right: 0; background-color: var(--secondary-bg-color);}
+  #vintageDeckImg {max-width: 100%; height: 340px; position: absolute; top: 0; left: 0;}
+  #sunsetImg {max-height: 504px; height: 510px; position: absolute; top: 340px; left: 0;}
+  #daytimeImg {max-width: 680px; height:504px; position: absolute; top: 340px; right:0;}
+  #skateboardIconImg {display: block; margin: 0 auto; background-color: black; padding: 45px 100px 100px 100px; position: absolute; top: 339px; right: -1px;}
+  #blurrSkateImg {max-width: 100%; height: 538px; position: absolute; top: 843px; left: 0;}
+
+  #longboards {background-color: var(--secondary-txt-color); text-align: center; font-size: 16px; max-width: 1020px; margin: 0 auto; font: var(--secondary-fonts);}
+  #longboardsH2 {padding-top: 60px; color: black; font-family: 'Righteous', sans-serif; font-size: 42px;}
+  .longboardsGrid {grid-template-columns: repeat(3, 1fr); grid-gap: 30px; padding: 40px;}
+  #trunks {background: url(../i/trucks.webp) no-repeat top center; background-size: cover; display: block; height: 220px; max-width: 997px;}
+  #bearings {background: url(../i/bearings.webp) no-repeat top center; background-size: cover; display: block; height: 220px; max-width: 997px;}
+  #wheels {background: url(../i/wheels.webp) no-repeat top center; background-size: cover; display: block; height: 220px;  max-width: 997px;}
+  .btmLinks {margin-bottom: 20px;}
+  .longboardsGrid strong {font-size: 30px;}
+
+  footer {background-color: #b4b4b4e3; max-width: 1020px; margin: 0 auto;}
+  .footerGrid {grid-template-columns: 2fr 1fr 1fr 2fr;  margin-top: 30px;}
+  .footerGrid a {display: block; color: var(--primary-txt-color); text-decoration: none; padding: 5px;}
+  .footA {padding: 15px;}
+  #socialMedia {padding-bottom: 20px;}
+  .footerGrid span {text-align: right;}
+
+  }
+
+
+  /* breakpoints */
+
+
+
+  @media screen and (max-width: 998px) {
+
+    .logoGrid {grid-template-columns: repeat(1, 1fr);}
+    #globalNav ul a {display: block;}
+    .longboardsGrid {grid-template-columns: repeat(2, 1fr);}  
+
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .longboardsGrid {grid-template-columns: repeat(1, 1fr);}
+    .footerGrid {grid-template-columns: repeat(1, 1fr);}
+    #longboards .container {width: auto;}
+
+
+}
+
+  @media screen and (max-width: 550px) {
+
+    h1 {padding: 15px 0 0;}
+
+  }
